@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.zip
+
+# Virtual environments
+.venv/
+venv/
+env/
+.smoke_core/
+.smoke_openai/
+
+# Local environment files
+.env
+.env.*
+
+# Test and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+
+# Type checker and linter caches
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+
+# OS artifacts
+Thumbs.db
+.DS_Store
+
