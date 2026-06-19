@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "treelace"
+version = "0.2.0"
+description = "Simple LLM applications with inspectable multi-tool execution."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [
+  { name = "Treelace Contributors" }
+]
+keywords = ["llm", "tool-orchestration", "workflow", "pydantic", "python"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+  "pydantic>=2.8.0",
+]
+
+[project.optional-dependencies]
+openai = [
+  "openai>=1.47.0",
+]
+dev = [
+  "pytest>=8.3.0",
+  "pytest-asyncio>=0.24.0",
+  "pytest-cov>=5.0.0",
+  "hypothesis>=6.112.0",
+  "ruff>=0.8.0",
+  "mypy>=1.11.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/treelace/treelace"
+Repository = "https://github.com/treelace/treelace"
+Issues = "https://github.com/treelace/treelace/issues"
+
+[project.scripts]
+treelace = "treelace.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/treelace"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unreachable = true
+warn_return_any = true
+show_error_codes = true
+exclude = ["tests"]
+
