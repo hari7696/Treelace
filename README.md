@@ -143,12 +143,49 @@ Each run returns:
 
 Use `respond=False` when you want structured data only.
 
+## Package
+
+Most apps only need the public imports:
+
+```python
+from treelace import Treelace, tool, ToolContext, Run, NeedsInput
+```
+
+| Name | Role |
+| --- | --- |
+| `Treelace` | App facade: `run`, `resume`, and async variants |
+| `tool` | Register a typed Python function as a tool |
+| `ToolContext` | Per-call context passed into a tool |
+| `Run` | Result: `status`, `answer`, `data`, `plan_text` |
+| `NeedsInput` | Prompt, options, and missing fields when a run is waiting |
+| `ToolOutput`, `ToolResult` | Structured tool return values |
+| `ClarificationRequest` | Ask the user for input from inside a tool |
+| `ConversationTurn` | Prior user/assistant turn for multi-turn runs |
+| `execution_plan_text` | Render a plan as text |
+
+The installable package is laid out like this:
+
+```text
+treelace/
+  app.py        Treelace, Run, NeedsInput
+  runner.py     plan, run, and resume
+  cli.py        treelace command
+  planner/      one-shot execution plan
+  compiler/     dependency DAG
+  runtime/      parallel wave execution
+  tools/        tool registration and results
+  models/       model adapters
+  ir/           workflow intermediate representation
+  sessions/     session and artifact stores
+  sandbox.py    restricted code runner
+```
+
 ## Examples
 
 - `examples/00_generic_math.py`
 - `examples/01_weather_lookups.py`
 - `examples/02_employee_questions.py`
-- `examples/03_weather_location_clarification.py`
+- `examples/03_weather_location_followup.py`
 
 Examples are configured for real model adapters. Set either:
 
