@@ -188,6 +188,7 @@ treelace/
 - `examples/01_weather_lookups.py`
 - `examples/02_employee_questions.py`
 - `examples/03_weather_location_followup.py`
+- `examples/04_weekend_trip.py`
 
 Examples are configured for real model adapters. Set either:
 

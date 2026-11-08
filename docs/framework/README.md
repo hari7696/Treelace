@@ -44,5 +44,7 @@ Treelace applications.
   employee database.
 - `examples/03_weather_location_clarification.py` - Ambiguous location
   clarification, resume flow, and multi-turn weather follow-ups.
+- `examples/04_weekend_trip.py` - Parallel flight, hotel, and car lookups
+  for two cities, then compare the quotes.
 
 For broader project docs, see `docs/guides.md`.
