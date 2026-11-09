@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented in this file.
 
+## [0.1.0a2] - 2026-11-08
+
+### Added
+
+- Weekend trip example that quotes two cities in parallel.
+
+### Changed
+
+- README now describes Treelace as a lightweight framework rather than "lite".
+- Example docs and public API tests now match the current example filenames.
+
 ## [0.1.0a1] - 2026-10-30
 
 ### Added

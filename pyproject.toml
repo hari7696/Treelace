@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "treelace"
-version = "0.1.0a1"
+version = "0.1.0a2"
 description = "Simple LLM applications with inspectable multi-tool execution."
 readme = "README.md"
 requires-python = ">=3.11"
