@@ -2,7 +2,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/treelace)](https://pypi.org/project/treelace/)
 
-Treelace is a lite Python framework for predictable multi-tool LLM workflows.
+Treelace is a lightweight Python framework for predictable multi-tool LLM workflows.
 
 It converts a question into an AST-style execution plan, compiles dependencies
 into a DAG, runs independent steps in parallel, and returns structured output.
