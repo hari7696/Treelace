@@ -5,11 +5,10 @@ from __future__ import annotations
 import os
 import sqlite3
 
-from treelace import Treelace, tool
-from treelace.models import Message, Model, ModelContext, ModelRequest, OpenAIChatModel, TextOutput
-
 from _model_setup import resolve_model_spec
 
+from treelace import Treelace, tool
+from treelace.models import Message, Model, ModelContext, ModelRequest, OpenAIChatModel, TextOutput
 
 SEED = """
 CREATE TABLE department (id INTEGER PRIMARY KEY, name TEXT NOT NULL);
