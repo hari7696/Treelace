@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented in this file.
 
+## [0.1.0] - 2026-11-08
+
+First stable release. This graduates the 0.1.0a1/a2 public API.
+
+- High-level `Treelace` facade with sync/async `run` and `resume`.
+- Weekend trip example and lightweight README wording from 0.1.0a2.
+- Install with `pip install treelace` (no `--pre` needed).
+
 ## [0.1.0a2] - 2026-11-08
 
 ### Added
@@ -45,7 +53,7 @@ All notable changes to this project are documented in this file.
 - This release is an intentional alpha API reset toward a simpler default path.
 - Advanced compiler/runtime modules remain available via subpackage imports.
 
-## [0.1.0] - 2026-10-20
+## Initial development - 2026-10-20
 
 - Initial Treelace framework implementation:
   - Typed workflow AST and compiler

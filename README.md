@@ -197,7 +197,8 @@ Examples are configured for real model adapters. Set either:
 
 ## Status
 
-Treelace is alpha and intentionally scoped for simple, finite tool workflows.
+Treelace 0.1 is the first stable release and is intentionally scoped for simple,
+finite tool workflows.
 See:
 
 - `docs/framework/README.md`
