@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
+from _model_setup import resolve_model_spec
+
 from treelace import Treelace, tool
 
-from _model_setup import resolve_model_spec
 
 @tool
 def add(left: float, right: float) -> dict[str, float]:

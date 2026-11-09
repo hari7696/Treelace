@@ -11,9 +11,9 @@ from __future__ import annotations
 import json
 from difflib import get_close_matches
 
-from treelace import ClarificationRequest, ConversationTurn, Run, Treelace, ToolResult, tool
-
 from _model_setup import resolve_model_spec
+
+from treelace import ClarificationRequest, ConversationTurn, Run, ToolResult, Treelace, tool
 
 SPRINGFIELD_IL = "Springfield, IL, US"
 SPRINGFIELD_MA = "Springfield, MA, US"

@@ -42,7 +42,9 @@ Treelace applications.
   sandboxed Python step.
 - `examples/02_employee_questions.py` - Generated Python against an in-memory
   employee database.
-- `examples/03_weather_location_clarification.py` - Ambiguous location
+- `examples/03_weather_location_followup.py` - Ambiguous location
   clarification, resume flow, and multi-turn weather follow-ups.
+- `examples/04_weekend_trip.py` - Parallel flight, hotel, and car lookups
+  for two cities, then compare the quotes.
 
 For broader project docs, see `docs/guides.md`.
