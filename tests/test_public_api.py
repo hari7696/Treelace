@@ -20,12 +20,14 @@ def test_readme_references_existing_examples() -> None:
     assert "examples/00_generic_math.py" in readme
     assert "examples/01_weather_lookups.py" in readme
     assert "examples/02_employee_questions.py" in readme
-    assert "examples/03_weather_location_clarification.py" in readme
+    assert "examples/03_weather_location_followup.py" in readme
+    assert "examples/04_weekend_trip.py" in readme
     assert "examples/02_advanced_sqlite_llm_tools.py" not in readme
     assert (root / "examples" / "00_generic_math.py").exists()
     assert (root / "examples" / "01_weather_lookups.py").exists()
     assert (root / "examples" / "02_employee_questions.py").exists()
-    assert (root / "examples" / "03_weather_location_clarification.py").exists()
+    assert (root / "examples" / "03_weather_location_followup.py").exists()
+    assert (root / "examples" / "04_weekend_trip.py").exists()
 
 
 def test_docs_include_clean_room_provenance_note() -> None:
